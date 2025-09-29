@@ -37,36 +37,25 @@ def get_svg_filename(mermaid_code):
 
 
 def md_img_pattern():
-    p = re.escape('![')
-    p += '.*'
+    p = r'('
+    p += re.escape('![')
+    p += r'.*'
     p += re.escape(f']({str(Path(ASSETS_DIR))}')
-    p += '.*'
+    p += r'.*'
     p += re.escape(')')
-    return re.compile(p)
+    p += r'\s*)+'
+    return re.compile(p, re.MULTILINE)
 
 
-def remove_svg_links_after_mermaid_block(source, assets_dir=ASSETS_DIR):
+def remove_mermaid_svg_links(source):
     """
-    Removes all SVG image links to assets_dir that immediately follow a mermaid
-    code block.
+    Removes all SVG image links to assets/mermaid
     """
-    # Regex for a mermaid code block
-    mermaid_block = re.compile(rf"({MERMAID_BLOCK_PATTERN})", re.MULTILINE)
-    # Regex for a blank line or image link to assets_dir SVG
-    svg_img_link = md_img_pattern()
     pos = 0
     pieces = []
-    for m in mermaid_block.finditer(source):
-        pieces.append(source[pos:m.end()])
-        # Skip all SVG links immediately after the block
-        rest = source[m.end():]
-        match = svg_img_link.match(rest)
-        if match:
-            pos = m.end() + match.end()
-        else:
-            pos = m.end()
-        # Will re-insert the correct image link after
-    pieces.append(source[pos:])
+    for svg in md_img_pattern().finditer(source):
+        pieces.append(source[pos:svg.start()])
+        pos += svg.end()
     return "".join(pieces)
 
 
@@ -76,6 +65,7 @@ def process_notebook(nb_path):
     for cell in nb.cells:
         if cell.cell_type != "markdown":
             continue
+
         # Find all mermaid code blocks
         matches = list(re.finditer(
             MERMAID_BLOCK_PATTERN, cell.source))
@@ -86,9 +76,10 @@ def process_notebook(nb_path):
                 cell.source = new_source
                 modified = True
             continue
+
         new_source = ""
         last_end = 0
-        cleaned_source = remove_svg_links_after_mermaid_block(cell.source)
+        cleaned_source = remove_mermaid_svg_links(cell.source)
         matches = list(re.finditer(
             MERMAID_BLOCK_PATTERN, cleaned_source))
         for match in matches:
