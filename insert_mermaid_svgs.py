@@ -89,7 +89,7 @@ def process_notebook(nb_path):
         print(f"[skip] No changes needed: {nb_path}")
 
 
-def update_md_cell(cell) -> bool:
+def update_md_cell(cell) -> str:
     new_source = ""
     last_end = 0
     cleaned_source = remove_mermaid_svg_links(cell.source)
