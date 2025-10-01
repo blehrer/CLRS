@@ -8,3 +8,5 @@
 ## Repo info
 
 Jupyter notebooks that have my notes, exercises, and problems.
+
+Coursera's ["Algorithms for Searching, Sorting, and Indexing"](https://www.coursera.org/learn/algorithms-searching-sorting-indexing) (CU, Boulder; Fall 2025)
