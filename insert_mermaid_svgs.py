@@ -77,37 +77,40 @@ def process_notebook(nb_path):
                 modified = True
             continue
 
-        new_source = ""
-        last_end = 0
-        cleaned_source = remove_mermaid_svg_links(cell.source)
-        matches = list(re.finditer(
-            MERMAID_BLOCK_PATTERN, cleaned_source))
-        for match in matches:
-            mermaid_code = match.group(1)
-            svg_filename = get_svg_filename(mermaid_code)
-            svg_path = Path(ASSETS_DIR) / svg_filename
-            # Render SVG if it doesn't exist
-            if not svg_path.exists():
-                svg_path.parent.mkdir(parents=True, exist_ok=True)
-                print(f"[render] Rendering diagram for {svg_filename}\
-                    from notebook {nb_path}")
-                render_mermaid_to_svg(mermaid_code, svg_path)
-            else:
-                print(f"[skip] SVG already exists: {svg_path}")
-            # Insert image tag after code block
-            new_source += cleaned_source[last_end:match.end()]
-            new_source += f"\n\n![]({svg_path.as_posix()})\n"
-            last_end = match.end()
-        new_source += cleaned_source[last_end:]
-        # Remove dead SVG links elsewhere
+        new_source = update_md_cell(cell)
         if new_source != cell.source:
             cell.source = new_source
             modified = True
+
     if modified:
         print(f"[update] Notebook updated: {nb_path}")
         nbformat.write(nb, nb_path)
     else:
         print(f"[skip] No changes needed: {nb_path}")
+
+
+def update_md_cell(cell) -> bool:
+    new_source = ""
+    last_end = 0
+    cleaned_source = remove_mermaid_svg_links(cell.source)
+    matches = list(re.finditer(
+        MERMAID_BLOCK_PATTERN, cleaned_source))
+    for match in matches:
+        mermaid_code = match.group(1)
+        svg_filename = get_svg_filename(mermaid_code)
+        svg_path = Path(ASSETS_DIR) / svg_filename
+        # Render SVG if it doesn't exist
+        if not svg_path.exists():
+            svg_path.parent.mkdir(parents=True, exist_ok=True)
+            render_mermaid_to_svg(mermaid_code, svg_path)
+        else:
+            print(f"[skip] SVG already exists: {svg_path}")
+        # Insert image tag after code block
+        new_source += cleaned_source[last_end:match.end()]
+        new_source += f"\n\n![]({svg_path.as_posix()})\n"
+        last_end = match.end()
+    new_source += cleaned_source[last_end:]
+    return new_source
 
 
 def main():
