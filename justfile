@@ -18,7 +18,7 @@ install: venv
 
 # Start notebook on localhost:8888
 start: venv
-    jupyter notebook
+    jupyter lab
 
 # Kill all jupyter processes
 stop: venv
