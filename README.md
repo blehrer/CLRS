@@ -13,3 +13,4 @@ Coursera's ["Algorithms for Searching, Sorting, and Indexing"](https://www.cours
 
 ## Non Python dependencies
 - ImageMagick (https://imagemagick.org/script/download.php)
+- Just (https://github.com/casey/just)
