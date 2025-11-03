@@ -14,4 +14,4 @@ start:
 
 # Kill notebook server
 stop:
-    jupyter server stop
+    uv run jupyter server stop
