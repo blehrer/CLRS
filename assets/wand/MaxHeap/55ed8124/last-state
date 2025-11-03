@@ -1,5 +1,6 @@
 digraph {
 	kv="node" shape=record
+	kv="node" rankdir=LR
 	3 [label=3]
 	9 [label=9]
 	9 -> 3
