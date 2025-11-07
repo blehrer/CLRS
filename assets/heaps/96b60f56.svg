@@ -10,9 +10,9 @@
 <polygon fill="white" stroke="none" points="-4,4 -4,-82 97.25,-82 97.25,4 -4,4"/>
 <text xml:space="preserve" text-anchor="middle" x="46.62" y="-23.7" font-family="Times,serif" font-size="14.00">ls.length = 1</text>
 <text xml:space="preserve" text-anchor="middle" x="46.62" y="-7.2" font-family="Times,serif" font-size="14.00">first leaf = [0]</text>
-<!-- 4508770832 -->
+<!-- 4470579728 -->
 <g id="node1" class="node">
-<title>4508770832</title>
+<title>4470579728</title>
 <path fill="lightgray" stroke="green" d="M27.5,-41.5C27.5,-41.5 65.75,-41.5 65.75,-41.5 71.75,-41.5 77.75,-47.5 77.75,-53.5 77.75,-53.5 77.75,-65.5 77.75,-65.5 77.75,-71.5 71.75,-77.5 65.75,-77.5 65.75,-77.5 27.5,-77.5 27.5,-77.5 21.5,-77.5 15.5,-71.5 15.5,-65.5 15.5,-65.5 15.5,-53.5 15.5,-53.5 15.5,-47.5 21.5,-41.5 27.5,-41.5"/>
 <text xml:space="preserve" text-anchor="middle" x="25.38" y="-54.45" font-family="Times,serif" font-size="14.00"> </text>
 <polyline fill="none" stroke="green" points="35.25,-41.5 35.25,-77.5"/>
