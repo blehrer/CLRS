@@ -9,9 +9,9 @@
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 284.5)">
 <polygon fill="white" stroke="none" points="-4,4 -4,-284.5 363.62,-284.5 363.62,4 -4,4"/>
 <text xml:space="preserve" text-anchor="middle" x="179.81" y="-7.2" font-family="Times,serif" font-size="14.00">MaxHeap [84, 5, 19, 22, 3, 17, 6, 10, 9], heapsize: 9</text>
-<!-- 4495602336 -->
+<!-- 4469877776 -->
 <g id="node1" class="node">
-<title>4495602336</title>
+<title>4469877776</title>
 <path fill="lightgray" stroke="green" d="M141,-244C141,-244 186,-244 186,-244 192,-244 198,-250 198,-256 198,-256 198,-268 198,-268 198,-274 192,-280 186,-280 186,-280 141,-280 141,-280 135,-280 129,-274 129,-268 129,-268 129,-256 129,-256 129,-250 135,-244 141,-244"/>
 <text xml:space="preserve" text-anchor="middle" x="138.88" y="-256.95" font-family="Times,serif" font-size="14.00"> </text>
 <polyline fill="none" stroke="green" points="148.75,-244 148.75,-280"/>
@@ -19,9 +19,9 @@
 <polyline fill="none" stroke="green" points="178.25,-244 178.25,-280"/>
 <text xml:space="preserve" text-anchor="middle" x="188.12" y="-256.95" font-family="Times,serif" font-size="14.00"> </text>
 </g>
-<!-- 4495602896 -->
+<!-- 4469878336 -->
 <g id="node2" class="node">
-<title>4495602896</title>
+<title>4469878336</title>
 <path fill="lightgray" stroke="green" d="M120.38,-171C120.38,-171 158.62,-171 158.62,-171 164.62,-171 170.62,-177 170.62,-183 170.62,-183 170.62,-195 170.62,-195 170.62,-201 164.62,-207 158.62,-207 158.62,-207 120.38,-207 120.38,-207 114.38,-207 108.38,-201 108.38,-195 108.38,-195 108.38,-183 108.38,-183 108.38,-177 114.38,-171 120.38,-171"/>
 <text xml:space="preserve" text-anchor="middle" x="118.25" y="-183.95" font-family="Times,serif" font-size="14.00"> </text>
 <polyline fill="none" stroke="green" points="128.12,-171 128.12,-207"/>
@@ -29,15 +29,15 @@
 <polyline fill="none" stroke="green" points="150.88,-171 150.88,-207"/>
 <text xml:space="preserve" text-anchor="middle" x="160.75" y="-183.95" font-family="Times,serif" font-size="14.00"> </text>
 </g>
-<!-- 4495602336&#45;&gt;4495602896 -->
+<!-- 4469877776&#45;&gt;4469878336 -->
 <g id="edge1" class="edge">
-<title>4495602336:l&#45;&gt;4495602896:v</title>
+<title>4469877776:l&#45;&gt;4469878336:v</title>
 <path fill="none" stroke="black" d="M138.88,-243.5C138.88,-232.12 139.19,-226.82 139.37,-218.95"/>
 <polygon fill="black" stroke="black" points="142.87,-219.05 139.48,-209.01 135.87,-218.97 142.87,-219.05"/>
 </g>
-<!-- 4495602784 -->
+<!-- 4469878224 -->
 <g id="node3" class="node">
-<title>4495602784</title>
+<title>4469878224</title>
 <path fill="lightgray" stroke="lightgray" d="M246,-171C246,-171 291,-171 291,-171 297,-171 303,-177 303,-183 303,-183 303,-195 303,-195 303,-201 297,-207 291,-207 291,-207 246,-207 246,-207 240,-207 234,-201 234,-195 234,-195 234,-183 234,-183 234,-177 240,-171 246,-171"/>
 <text xml:space="preserve" text-anchor="middle" x="243.88" y="-183.95" font-family="Times,serif" font-size="14.00"> </text>
 <polyline fill="none" stroke="lightgray" points="253.75,-171 253.75,-207"/>
@@ -45,21 +45,21 @@
 <polyline fill="none" stroke="lightgray" points="283.25,-171 283.25,-207"/>
 <text xml:space="preserve" text-anchor="middle" x="293.12" y="-183.95" font-family="Times,serif" font-size="14.00"> </text>
 </g>
-<!-- 4495602336&#45;&gt;4495602784 -->
+<!-- 4469877776&#45;&gt;4469878224 -->
 <g id="edge2" class="edge">
-<title>4495602336:r&#45;&gt;4495602784:v</title>
+<title>4469877776:r&#45;&gt;4469878224:v</title>
 <path fill="none" stroke="black" d="M188.12,-243.5C188.12,-209.1 250.21,-237.6 265.25,-218.43"/>
 <polygon fill="black" stroke="black" points="268.57,-219.53 268.07,-208.95 261.86,-217.54 268.57,-219.53"/>
 </g>
-<!-- 4495602896&#45;&gt;4495602336 -->
+<!-- 4469878336&#45;&gt;4469877776 -->
 <g id="edge9" class="edge">
-<title>4495602896&#45;&gt;4495602336</title>
+<title>4469878336&#45;&gt;4469877776</title>
 <path fill="none" stroke="green" d="M145.26,-207.03C147.9,-214.86 151.11,-224.34 154.09,-233.17"/>
 <polygon fill="green" stroke="green" points="150.69,-234.03 157.21,-242.38 157.32,-231.78 150.69,-234.03"/>
 </g>
-<!-- 4495602560 -->
+<!-- 4469878000 -->
 <g id="node4" class="node">
-<title>4495602560</title>
+<title>4469878000</title>
 <path fill="lightgray" stroke="lightgray" d="M54,-98C54,-98 99,-98 99,-98 105,-98 111,-104 111,-110 111,-110 111,-122 111,-122 111,-128 105,-134 99,-134 99,-134 54,-134 54,-134 48,-134 42,-128 42,-122 42,-122 42,-110 42,-110 42,-104 48,-98 54,-98"/>
 <text xml:space="preserve" text-anchor="middle" x="51.88" y="-110.95" font-family="Times,serif" font-size="14.00"> </text>
 <polyline fill="none" stroke="lightgray" points="61.75,-98 61.75,-134"/>
@@ -67,15 +67,15 @@
 <polyline fill="none" stroke="lightgray" points="91.25,-98 91.25,-134"/>
 <text xml:space="preserve" text-anchor="middle" x="101.12" y="-110.95" font-family="Times,serif" font-size="14.00"> </text>
 </g>
-<!-- 4495602896&#45;&gt;4495602560 -->
+<!-- 4469878336&#45;&gt;4469878000 -->
 <g id="edge3" class="edge">
-<title>4495602896:l&#45;&gt;4495602560:v</title>
+<title>4469878336:l&#45;&gt;4469878000:v</title>
 <path fill="none" stroke="black" d="M118.25,-170.5C118.25,-150.78 91.22,-155.35 80.66,-145.12"/>
 <polygon fill="black" stroke="black" points="83.95,-143.95 77.05,-135.91 77.44,-146.5 83.95,-143.95"/>
 </g>
-<!-- 4495602672 -->
+<!-- 4469878112 -->
 <g id="node5" class="node">
-<title>4495602672</title>
+<title>4469878112</title>
 <path fill="lightgray" stroke="lightgray" d="M141.38,-98C141.38,-98 179.62,-98 179.62,-98 185.62,-98 191.62,-104 191.62,-110 191.62,-110 191.62,-122 191.62,-122 191.62,-128 185.62,-134 179.62,-134 179.62,-134 141.38,-134 141.38,-134 135.38,-134 129.38,-128 129.38,-122 129.38,-122 129.38,-110 129.38,-110 129.38,-104 135.38,-98 141.38,-98"/>
 <text xml:space="preserve" text-anchor="middle" x="139.25" y="-110.95" font-family="Times,serif" font-size="14.00"> </text>
 <polyline fill="none" stroke="lightgray" points="149.12,-98 149.12,-134"/>
@@ -83,15 +83,15 @@
 <polyline fill="none" stroke="lightgray" points="171.88,-98 171.88,-134"/>
 <text xml:space="preserve" text-anchor="middle" x="181.75" y="-110.95" font-family="Times,serif" font-size="14.00"> </text>
 </g>
-<!-- 4495602896&#45;&gt;4495602672 -->
+<!-- 4469878336&#45;&gt;4469878112 -->
 <g id="edge4" class="edge">
-<title>4495602896:r&#45;&gt;4495602672:v</title>
+<title>4469878336:r&#45;&gt;4469878112:v</title>
 <path fill="none" stroke="black" d="M160.75,-170.5C160.75,-159.12 160.62,-153.82 160.55,-145.95"/>
 <polygon fill="black" stroke="black" points="164.05,-146 160.51,-136.01 157.05,-146.03 164.05,-146"/>
 </g>
-<!-- 4495603008 -->
+<!-- 4469878448 -->
 <g id="node6" class="node">
-<title>4495603008</title>
+<title>4469878448</title>
 <path fill="lightgray" stroke="lightgray" d="M222,-98C222,-98 267,-98 267,-98 273,-98 279,-104 279,-110 279,-110 279,-122 279,-122 279,-128 273,-134 267,-134 267,-134 222,-134 222,-134 216,-134 210,-128 210,-122 210,-122 210,-110 210,-110 210,-104 216,-98 222,-98"/>
 <text xml:space="preserve" text-anchor="middle" x="219.88" y="-110.95" font-family="Times,serif" font-size="14.00"> </text>
 <polyline fill="none" stroke="lightgray" points="229.75,-98 229.75,-134"/>
@@ -99,15 +99,15 @@
 <polyline fill="none" stroke="lightgray" points="259.25,-98 259.25,-134"/>
 <text xml:space="preserve" text-anchor="middle" x="269.12" y="-110.95" font-family="Times,serif" font-size="14.00"> </text>
 </g>
-<!-- 4495602784&#45;&gt;4495603008 -->
+<!-- 4469878224&#45;&gt;4469878448 -->
 <g id="edge5" class="edge">
-<title>4495602784:l&#45;&gt;4495603008:v</title>
+<title>4469878224:l&#45;&gt;4469878448:v</title>
 <path fill="none" stroke="black" d="M243.88,-170.5C243.88,-159.12 244.19,-153.82 244.37,-145.95"/>
 <polygon fill="black" stroke="black" points="247.87,-146.05 244.48,-136.01 240.87,-145.97 247.87,-146.05"/>
 </g>
-<!-- 4495602448 -->
+<!-- 4469877888 -->
 <g id="node7" class="node">
-<title>4495602448</title>
+<title>4469877888</title>
 <path fill="lightgray" stroke="lightgray" d="M309.38,-98C309.38,-98 347.62,-98 347.62,-98 353.62,-98 359.62,-104 359.62,-110 359.62,-110 359.62,-122 359.62,-122 359.62,-128 353.62,-134 347.62,-134 347.62,-134 309.38,-134 309.38,-134 303.38,-134 297.38,-128 297.38,-122 297.38,-122 297.38,-110 297.38,-110 297.38,-104 303.38,-98 309.38,-98"/>
 <text xml:space="preserve" text-anchor="middle" x="307.25" y="-110.95" font-family="Times,serif" font-size="14.00"> </text>
 <polyline fill="none" stroke="lightgray" points="317.12,-98 317.12,-134"/>
@@ -115,15 +115,15 @@
 <polyline fill="none" stroke="lightgray" points="339.88,-98 339.88,-134"/>
 <text xml:space="preserve" text-anchor="middle" x="349.75" y="-110.95" font-family="Times,serif" font-size="14.00"> </text>
 </g>
-<!-- 4495602784&#45;&gt;4495602448 -->
+<!-- 4469878224&#45;&gt;4469877888 -->
 <g id="edge6" class="edge">
-<title>4495602784:r&#45;&gt;4495602448:v</title>
+<title>4469878224:r&#45;&gt;4469877888:v</title>
 <path fill="none" stroke="black" d="M293.12,-170.5C293.12,-152.8 315.15,-154.58 324.44,-145.11"/>
 <polygon fill="black" stroke="black" points="327.65,-146.5 327.96,-135.91 321.12,-144 327.65,-146.5"/>
 </g>
-<!-- 4495603120 -->
+<!-- 4469878560 -->
 <g id="node8" class="node">
-<title>4495603120</title>
+<title>4469878560</title>
 <path fill="lightgray" stroke="lightgray" d="M12,-25C12,-25 57,-25 57,-25 63,-25 69,-31 69,-37 69,-37 69,-49 69,-49 69,-55 63,-61 57,-61 57,-61 12,-61 12,-61 6,-61 0,-55 0,-49 0,-49 0,-37 0,-37 0,-31 6,-25 12,-25"/>
 <text xml:space="preserve" text-anchor="middle" x="9.88" y="-37.95" font-family="Times,serif" font-size="14.00"> </text>
 <polyline fill="none" stroke="lightgray" points="19.75,-25 19.75,-61"/>
@@ -131,15 +131,15 @@
 <polyline fill="none" stroke="lightgray" points="49.25,-25 49.25,-61"/>
 <text xml:space="preserve" text-anchor="middle" x="59.12" y="-37.95" font-family="Times,serif" font-size="14.00"> </text>
 </g>
-<!-- 4495602560&#45;&gt;4495603120 -->
+<!-- 4469878000&#45;&gt;4469878560 -->
 <g id="edge7" class="edge">
-<title>4495602560:l&#45;&gt;4495603120:v</title>
+<title>4469878000:l&#45;&gt;4469878560:v</title>
 <path fill="none" stroke="black" d="M51.88,-97.5C51.88,-84.31 42.3,-80.66 37.37,-72.38"/>
 <polygon fill="black" stroke="black" points="40.82,-71.74 34.89,-62.96 34.05,-73.53 40.82,-71.74"/>
 </g>
-<!-- 4495603232 -->
+<!-- 4469878672 -->
 <g id="node9" class="node">
-<title>4495603232</title>
+<title>4469878672</title>
 <path fill="lightgray" stroke="lightgray" d="M99.38,-25C99.38,-25 137.62,-25 137.62,-25 143.62,-25 149.62,-31 149.62,-37 149.62,-37 149.62,-49 149.62,-49 149.62,-55 143.62,-61 137.62,-61 137.62,-61 99.38,-61 99.38,-61 93.38,-61 87.38,-55 87.38,-49 87.38,-49 87.38,-37 87.38,-37 87.38,-31 93.38,-25 99.38,-25"/>
 <text xml:space="preserve" text-anchor="middle" x="97.25" y="-37.95" font-family="Times,serif" font-size="14.00"> </text>
 <polyline fill="none" stroke="lightgray" points="107.12,-25 107.12,-61"/>
@@ -147,9 +147,9 @@
 <polyline fill="none" stroke="lightgray" points="129.88,-25 129.88,-61"/>
 <text xml:space="preserve" text-anchor="middle" x="139.75" y="-37.95" font-family="Times,serif" font-size="14.00"> </text>
 </g>
-<!-- 4495602560&#45;&gt;4495603232 -->
+<!-- 4469878000&#45;&gt;4469878672 -->
 <g id="edge8" class="edge">
-<title>4495602560:r&#45;&gt;4495603232:v</title>
+<title>4469878000:r&#45;&gt;4469878672:v</title>
 <path fill="none" stroke="black" d="M101.12,-97.5C101.12,-84.31 110.7,-80.66 115.63,-72.38"/>
 <polygon fill="black" stroke="black" points="118.95,-73.53 118.11,-62.96 112.18,-71.74 118.95,-73.53"/>
 </g>
