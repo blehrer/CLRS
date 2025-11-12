@@ -3,13 +3,20 @@
 log := "warn"
 export JUST_LOG := log
 
+# direnv (quiet)
+@direnv:
+    [ $(which direnv) ] && [ $(which jq) ] \
+      && [[ $(direnv status --json | jq '.state.foundRC.allowed' ) = 1 ]] \
+      && echo 'direnv not allowed... allowing ....' \
+      && direnv allow || exit 0
+
 # Install all dependencies
-install:
-    uv install
+install: direnv
+    uv sync
     brew install imagemagick
 
 # Start notebook on localhost:8888
-start:
+start: direnv
     nohup jupyter lab &
 
 # Kill notebook server
