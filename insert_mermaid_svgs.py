@@ -60,7 +60,7 @@ def remove_mermaid_svg_links(source):
     for svg in md_img_pattern().finditer(source):
         pieces.append(source[pos : svg.start()])
         pos += svg.end()
-    return "".join(pieces)
+    return "".join(pieces) if pieces else source
 
 
 def process_notebook(nb_path: Path):
