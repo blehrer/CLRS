@@ -58,7 +58,7 @@ def remove_mermaid_svg_links(source):
     pos = 0
     pieces = []
     for svg in md_img_pattern().finditer(source):
-        pieces.append(source[pos : svg.start()])
+        pieces.append(source[pos: svg.start()])
         pos += svg.end()
     return "".join(pieces) if pieces else source
 
@@ -66,6 +66,8 @@ def remove_mermaid_svg_links(source):
 def process_notebook(nb_path: Path):
     nb = nbformat.read(nb_path, as_version=4)
     modified = False
+    if not nb['cells']:
+        return
     for cell in nb.cells:
         if cell.cell_type != "markdown":
             continue
@@ -114,7 +116,7 @@ def update_md_cell(cell, nb_path: Path) -> str:
         else:
             print(f"[skip] SVG already exists: {svg_path}")
         # Insert image tag after code block
-        new_source += cleaned_source[last_end : match.end()]
+        new_source += cleaned_source[last_end: match.end()]
         new_source += f"\n\n![]({svg_path.as_posix()})\n"
         last_end = match.end()
     new_source += cleaned_source[last_end:]
