@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 import nbformat
+from nbformat.notebooknode import NotebookNode
 import os
 import re
 import subprocess
@@ -66,7 +67,7 @@ def remove_mermaid_svg_links(source):
 def process_notebook(nb_path: Path):
     nb = nbformat.read(nb_path, as_version=4)
     modified = False
-    if not nb['cells']:
+    if not isinstance(nb, NotebookNode) or nb['cells']:
         return
     for cell in nb.cells:
         if cell.cell_type != "markdown":
